@@ -3,10 +3,17 @@
 const Sequelize = require("sequelize");
 
 // Option 1: Passing parameters separately
-const sequelize = new Sequelize("Burger", "root", "Shmaavmc1", {
-  host: "localhost",
-  dialect: "mysql" /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
-});
+const sequelize = new Sequelize(
+  "heroku_3cead47d1b8797d",
+  "bb97fada1d29f8",
+  "7472d044",
+  {
+    host: "us-cdbr-iron-east-02.cleardb.net",
+    dialect: "mysql" /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+  }
+);
+
+//bb97fada1d29f8:7472d044@us-cdbr-iron-east-02.cleardb.net/heroku_3cead47d1b8797d?reconnect=true
 
 //making sure connection works:
 
