@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <p>This is the new index page</p>
+
+    <hX>Uneaten Burgers</hX>
+    <ul class="uneaten-Burgers">
+        {{#each Burgers.undevoured}}
+        <li id={{id}}>{{burger_name}}<button value={{id}} class="leftSide devourButton">Devour it</button></li>
+
+        {{/each}}
+    </ul>
+
+
+    <form>
+        Create Burger<br>
+        <input id="textInput" type="text" name="newBurger"><br>
+        <input id="submitButton" type="submit" value="Submit">
+    </form>
+
+    <hX>Eaten Burgers</hX>
+    <ul class="eatenBurgers">
+        {{#each Burgers.devoured}}
+        <li id={{id}}>{{burger_name}}</li>
+
+        {{/each}}
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+
+
+
+
+</html>
