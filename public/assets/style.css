@@ -1,4 +1,35 @@
-.rightSide {
-  background-color: red;
-  font: blue;
+body {
+  background-color: lightcoral;
+}
+
+#uneaten-Burgers {
+  display: inline-block;
+}
+
+#eatenBurgers {
+  display: inline-block;
+}
+
+form {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+}
+
+#mainContent {
+  text-align: center;
+}
+
+h4 {
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }

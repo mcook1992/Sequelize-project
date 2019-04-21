@@ -52,7 +52,7 @@ Burger.sync({ force: true }).then(function(thing) {
   //   console.log("We managed to sync");
 
   Burger.create({
-    burger_name: "Maya",
+    burger_name: "Vegetarian",
     description: "Product of Michael and Carla",
     devoured: false
   }).then(function(element) {

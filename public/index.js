@@ -7,9 +7,12 @@ $(".devourButton").click(function() {
   $(this).remove();
   var devouredElement = document.getElementById(this.value);
 
+  // //added in most recent version
+  // $("#" + this.value).remove();
+
   // $(devouredElements).addClass("rightSide");
 
-  $(".eatenBurgers").append(devouredElement);
+  $("#eatenBurgers").append(devouredElement);
 
   $.ajax({
     url: "/" + this.value,
